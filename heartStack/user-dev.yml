@@ -1,0 +1,14 @@
+
+server:
+  port: 9120
+spring:
+  application:
+    name: user
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9001/eureka/
+
+
+form: git.user.dev-1.0
