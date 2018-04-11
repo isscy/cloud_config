@@ -7,6 +7,7 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://localhost/hs_user?useUnicode=true&characterEncoding=utf-8
     username: root
     password: '{cipher}AQAluc8F8e0lX6PjBcw/Lv9+NykHaTjO+oTxdMGGFQYph1clH3UEXnz5UeWgDzjaVG/sRfXqn1HyCGNSuH4AVhibjLEcrhwF8vwD0wwXU31NLL6KGd7hAftBLJw591yn1wKxdqE8SKMpsAGndo+32ntZVFafhkHvA8C411Cg0NkgmsTiN6H2oORwk1FfUZ7AlGXOtj/JjpNnOE9TaOzl9Aj/1NVybLNTooujDiUFttSMFp/XxaiDs1zxHTVwIk89wndcGGoYXImT/IvEZcLPCiQ+rSSMAbeFEp0IrfKvqilRZHCoCEQrSILsOhWYyaZgmC+3wFZjpU6jf/0OYqYDKVUMKc+Do7jGEeJiiDFSYvDZvGxMIhN+poxZwgtt+HbhiAM='
@@ -19,3 +20,20 @@ eureka:
 
 from: git.user.dev-1.0
 testPwd: '{cipher}AQCyv1J8OlOssbCRnN9Hg1WqCCqkyUqsn9WLvyDbx58LCiD4xvcUvWFQhFteDI52tkBMLlCFkl9Z61wjkHyQtNZPF+mBid35604HkNk/Z7oF/lMBDQTzPZSjiTZT0OiQSHKO8jF4c+LyDnkYDEhWV9A4t6JKVLN3+ib5twqubZk+jyJ9eSQ9Mdh0ggcDEKhr7LzwwOkUsbtK6mfY2K95yWI0+E0m9hKQkxAxXeKsjh0AuTfy+2jGxcL+wghmwMlxKQg/ZJEMkP71xx1F7MQ83w7ncruxNI7yBxcJUC7Ot9mzPIZQwxT/mOtgFfhltG/GwLSqYnRUgzqrx39vdMnYwpu0NOir67/oLS9LHBPPGwGfUbqKsdxFF7icbkaWJxVX0VA='
+
+
+mybatis:
+  mapper-locations: classpath*:mapper/**/*.xml
+  type-aliases-package: cn.heartStack.user
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+
+
+
+logging:
+    level:
+        cn:
+            heartStack:
+                user:
+                    mapper: DEBUG
