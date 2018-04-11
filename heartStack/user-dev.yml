@@ -11,4 +11,4 @@ eureka:
       defaultZone: http://localhost:9001/eureka/
 
 
-form: git.user.dev-1.0
+from: git.user.dev-1.0
