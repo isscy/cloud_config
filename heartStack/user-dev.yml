@@ -5,6 +5,12 @@ spring:
   application:
     name: user
 
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/hs_user?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: '{cipher}AQAluc8F8e0lX6PjBcw/Lv9+NykHaTjO+oTxdMGGFQYph1clH3UEXnz5UeWgDzjaVG/sRfXqn1HyCGNSuH4AVhibjLEcrhwF8vwD0wwXU31NLL6KGd7hAftBLJw591yn1wKxdqE8SKMpsAGndo+32ntZVFafhkHvA8C411Cg0NkgmsTiN6H2oORwk1FfUZ7AlGXOtj/JjpNnOE9TaOzl9Aj/1NVybLNTooujDiUFttSMFp/XxaiDs1zxHTVwIk89wndcGGoYXImT/IvEZcLPCiQ+rSSMAbeFEp0IrfKvqilRZHCoCEQrSILsOhWYyaZgmC+3wFZjpU6jf/0OYqYDKVUMKc+Do7jGEeJiiDFSYvDZvGxMIhN+poxZwgtt+HbhiAM='
+
 eureka:
   client:
     serviceUrl:
