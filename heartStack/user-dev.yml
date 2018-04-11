@@ -10,8 +10,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://localhost/hs_user?useUnicode=true&characterEncoding=utf-8
     username: root
-    password: root
-    #password: '{cipher}AQAluc8F8e0lX6PjBcw/Lv9+NykHaTjO+oTxdMGGFQYph1clH3UEXnz5UeWgDzjaVG/sRfXqn1HyCGNSuH4AVhibjLEcrhwF8vwD0wwXU31NLL6KGd7hAftBLJw591yn1wKxdqE8SKMpsAGndo+32ntZVFafhkHvA8C411Cg0NkgmsTiN6H2oORwk1FfUZ7AlGXOtj/JjpNnOE9TaOzl9Aj/1NVybLNTooujDiUFttSMFp/XxaiDs1zxHTVwIk89wndcGGoYXImT/IvEZcLPCiQ+rSSMAbeFEp0IrfKvqilRZHCoCEQrSILsOhWYyaZgmC+3wFZjpU6jf/0OYqYDKVUMKc+Do7jGEeJiiDFSYvDZvGxMIhN+poxZwgtt+HbhiAM='
+    password: '{cipher}AQCxzWHfmcUDpm6zu4/HPxgl8uZqmU7yfgOLBIZnNl70o2tdylxDQX7t2NeiGLbv9jTBU+/FGs3kwHMt0bdPt/CDXrY4MrGwmJalnG8sRAI326zmtASPJVYRaCiS4w0jxxRTzsK00XJtZ2D+fNfQOFExXZJ44wBXR5gWYPwNXH+eMniTuPr37pkJeqYoHJQPpg/eFl3aAjOb6wxN9YyesGZF+Vp2eO+C94DwpMuR1cdABXz2fYEy4pGV2kL83zZBftP6YPUK4BGku0j6Gqaghl9fsqBlSlajBoA+Mce5+iLzitQmvgVUFaVoUPuE2QQC67eChIbsutiGGZ5BaGHO/TvgRheIK/yuh+h/GNjFDhAkEidvAl6Nm0k4ujQAtFu/PBM='
 
 eureka:
   client:
