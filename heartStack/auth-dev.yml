@@ -1,0 +1,8 @@
+
+
+# TODO 需要加密！！！ !!! ！！！ !!! ！！！ !!!
+auth:
+    clientId: adc
+    clientSecret: sss
+    scope: server
+    urls: /admin
