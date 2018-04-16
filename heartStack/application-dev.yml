@@ -1,0 +1,22 @@
+
+#  改名为 -dev 然后删了这个文件啊啊啊啊啊
+spring:
+    redis:
+        remote: true        #cachecloud 获取
+        host: 39.107.123.121
+        port: 6379
+        password: root
+
+
+redis:
+    cache:
+        expiration: 3601
+
+security:
+    basic:
+        enabled: false
+management:
+    security:
+        enabled: false
+
+
