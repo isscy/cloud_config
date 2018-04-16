@@ -5,4 +5,14 @@ auth:
     clientId: adc
     clientSecret: sss
     scope: server
-    urls: /admin
+    urls:
+        - /authentication/**
+        - /**/*.css
+        - /social
+        - /signin
+        - /signup
+        - /info
+        - /health
+        - /metrics/**
+        - /loggers/**
+        - /mobile/token
