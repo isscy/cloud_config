@@ -16,3 +16,4 @@ auth:
         - /metrics/**
         - /loggers/**
         - /mobile/token
+        - /test/**
