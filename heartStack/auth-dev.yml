@@ -17,3 +17,10 @@ auth:
         - /loggers/**
         - /mobile/token
         - /test/**
+
+
+spring:
+    mvc:
+      view:
+        prefix: /
+        suffix: .html
