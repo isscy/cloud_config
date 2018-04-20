@@ -24,3 +24,8 @@ spring:
       view:
         prefix: /
         suffix: .html
+
+security:
+  oauth2:
+    resource:
+      filter-order: 3
