@@ -3,8 +3,8 @@ zuul:
         api-user:
             path: /user/**
             serviceId: user
-        api-gataway:
-            path: /gataway/**
-            serviceId: basef-gataway
+        api-auth:
+            path: /auth/**
+            serviceId: auth
 
 zz: gg
