@@ -6,5 +6,8 @@ zuul:
         api-auth:
             path: /auth/**
             serviceId: auth
+        api-zipkin:
+            path: /zipkin/**
+            serviceId: basef-zipkin
 
 zz: gg
