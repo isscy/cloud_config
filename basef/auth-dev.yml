@@ -7,6 +7,11 @@ spring:
         username: root
         password: '{cipher}a149ffad0e844341dfca823c5c3ae39bf7ff31c3f6af107aade6e258dbf6df85'
         type: com.alibaba.druid.pool.DruidDataSource
+    redis:
+        remote: false        #cachecloud 获取
+        host: 39.107.123.121
+        port: 6381
+        password: '{cipher}a149ffad0e844341dfca823c5c3ae39bf7ff31c3f6af107aade6e258dbf6df85'
 
 
 
