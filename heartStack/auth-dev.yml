@@ -20,10 +20,17 @@ auth:
 
 
 spring:
-    mvc:
-      view:
-        prefix: /
-        suffix: .html
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost/hs_user?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: '{cipher}AQCxzWHfmcUDpm6zu4/HPxgl8uZqmU7yfgOLBIZnNl70o2tdylxDQX7t2NeiGLbv9jTBU+/FGs3kwHMt0bdPt/CDXrY4MrGwmJalnG8sRAI326zmtASPJVYRaCiS4w0jxxRTzsK00XJtZ2D+fNfQOFExXZJ44wBXR5gWYPwNXH+eMniTuPr37pkJeqYoHJQPpg/eFl3aAjOb6wxN9YyesGZF+Vp2eO+C94DwpMuR1cdABXz2fYEy4pGV2kL83zZBftP6YPUK4BGku0j6Gqaghl9fsqBlSlajBoA+Mce5+iLzitQmvgVUFaVoUPuE2QQC67eChIbsutiGGZ5BaGHO/TvgRheIK/yuh+h/GNjFDhAkEidvAl6Nm0k4ujQAtFu/PBM='
+  
 
 security:
   oauth2:
