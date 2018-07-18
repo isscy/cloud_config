@@ -19,3 +19,10 @@ self:
   oauth:
     enable: true
     resource: ogf
+
+mybatis:
+    mapper-locations: classpath*:mapper/**/*.xml
+    type-aliases-package: cn.ff.auth
+    configuration:
+        map-underscore-to-camel-case: true
+        cache-enabled: false
