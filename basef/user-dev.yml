@@ -1,3 +1,20 @@
 username: 半年
 password: 讴歌即
 email: ff@hero.com
+
+spring:
+    profiles:
+        active: dev
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://39.107.123.121:3307/basef?useUnicode=true&characterEncoding=utf-8&tinyInt1isBit=false
+        username: root
+        password: '{cipher}a149ffad0e844341dfca823c5c3ae39bf7ff31c3f6af107aade6e258dbf6df85'
+        type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+    mapper-locations: classpath*:mapper/**/*.xml
+    type-aliases-package: cn.ff.user
+    configuration:
+        map-underscore-to-camel-case: true
+        cache-enabled: false
