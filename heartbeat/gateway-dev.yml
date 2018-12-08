@@ -1,43 +1,29 @@
-#spring:
-#    cloud:
-#        gateway:
-#            default-filters:
-#            #  里面可以定义一些共同的filter，对所有路由都起作用
-#            routes:
-#                #------------------------------------------------------------------------
-#                -   id: user
-#                    uri: lb://user
-#                    predicates:
-#                        - Path= ${server.servlet.context-path}/user/**
-#                    filters:
-#                        - StripPrefix= 1
-#                        -   name: Hystrix
-#                                args:
-#                                    name: userHystrixCommand
-#                                    fallbackUri: forward:/hystrixTimeout
-#------------------------------------------------------------------------
-#                -   id: websocket
-#                    uri: lb:ws://websocket
-#                    predicates:
-#                        - Path= ${server.servlet.context-path}/websocket/**
-#                    filters:
-#                        - StripPrefix= 1
+spring:
+    cloud:
+        gateway:
+            default-filters:
+            routes:
+                #------------------------------------------------------------------------
+                -   id: user
+                    uri: lb://user
+                    predicates:
+                        - Path= ${server.servlet.context-path}/user/**
+                    filters:
+                        - StripPrefix= 1
+                        -   name: Hystrix
+                                args:
+                                    name: userHystrixCommand
+                                    fallbackUri: forward:/hystrixTimeout
+                #------------------------------------------------------------------------
+                -   id: websocket
+                    uri: lb:ws://websocket
+                    predicates:
+                        - Path= ${server.servlet.context-path}/websocket/**
+                    filters:
+                        - StripPrefix= 1
 
 
 
-
-#
-#spring:
-#    cloud:
-#        gateway:
-#            discovery:
-#                locator:
-#                    enabled: true
-#            routes:
-#                -   id: 163                     #网关路由到网易官网
-#                    uri: http://www.163.com/
-#                    predicates:
-#                        - Path=/163/**
 
 
 
