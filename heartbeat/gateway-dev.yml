@@ -16,11 +16,11 @@ spring:
                                     name: userHystrixCommand
                                     fallbackUri: forward:/hystrixTimeout
                 #------------------------------------------------------------------------
-                -   id: websocket
-                    uri: lb:ws://websocket
-                    predicates:
-                        - Path= ${server.servlet.context-path}/websocket/**
-                    filters:
-                        - StripPrefix= 1
+#                -   id: websocket
+#                    uri: lb:ws://websocket
+#                    predicates:
+#                        - Path= ${server.servlet.context-path}/websocket/**
+#                    filters:
+#                        - StripPrefix= 1
 
 
