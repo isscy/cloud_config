@@ -26,18 +26,18 @@
 
 
 
-
-spring:
-    cloud:
-        gateway:
-            discovery:
-                locator:
-                    enabled: true
-            routes:
-                -   id: 163                     #网关路由到网易官网
-                    uri: http://www.163.com/
-                    predicates:
-                        - Path=/163/**
+#
+#spring:
+#    cloud:
+#        gateway:
+#            discovery:
+#                locator:
+#                    enabled: true
+#            routes:
+#                -   id: 163                     #网关路由到网易官网
+#                    uri: http://www.163.com/
+#                    predicates:
+#                        - Path=/163/**
 
 
 
