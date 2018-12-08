@@ -1,0 +1,9 @@
+
+
+spring:
+    
+    datasource:
+        url: jdbc:mysql://114.115.254.32:3306/redseft?useUnicode=true&amp;characterEncoding=UTF-8&amp;useOldAliasMetadataBehavior=true&useSSL=false
+        username: heart
+        password: Java_18!521
+        type: com.alibaba.druid.pool.DruidDataSource
