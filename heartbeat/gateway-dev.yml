@@ -17,7 +17,6 @@ spring:
                                 name: userHystrixCommand
                                 fallbackUri: forward:/hystrixTimeout
     
-                ------------------------------------------------------------------------
                 -   id: websocket
                     uri: lb:ws://websocket
                     predicates:
