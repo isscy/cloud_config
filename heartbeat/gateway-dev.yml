@@ -20,7 +20,7 @@ spring:
                 -   id: websocket
                     uri: lb:ws://websocket
                     predicates:
-                        - Path= ${server.servlet.context-path}/websocket/**
+                        - Path=/websocket/**
                     filters:
                         - StripPrefix= 1
 
